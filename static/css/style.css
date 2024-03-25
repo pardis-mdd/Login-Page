@@ -1,5 +1,5 @@
-body{
-  background-color: #8fbde8
+body {
+  background-color: #8fbde8;
 }
 @font-face {
   font-family: "wigi";
@@ -246,8 +246,19 @@ body{
   display: none;
   cursor: pointer;
 }
+.input-group {
+  display: flex;
+  align-items: center;
+}
 
-/* Project Responsive */
+.Email__txt,
+.pass__txt {
+  flex: 1;
+}
+
+.logo-alert {
+  margin-left: 0.5rem;
+}
 
 @media only screen and (max-width: 1338px) {
   .container {
