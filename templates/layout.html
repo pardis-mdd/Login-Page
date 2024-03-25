@@ -3,21 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <title>{% block title %}My Website{% endblock %}</title>
-    <!-- Include common CSS files -->
+
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='css/style.css') }}"
     />
-    <!-- Include common JavaScript files -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
     <script src="{{ url_for('static', filename='js/app.js') }}"></script>
   </head>
   <body>
-    <!-- Content block for individual pages -->
     <div class="content">{% block content %}{% endblock %}</div>
-
-    <!-- Common footer -->
-    <footer>
-      <p>&copy; 2024 My Website. All rights reserved.</p>
-    </footer>
   </body>
 </html>
